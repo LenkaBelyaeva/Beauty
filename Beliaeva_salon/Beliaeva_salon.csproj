@@ -47,6 +47,7 @@
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
     <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.Security" />
     <Reference Include="System.Xml" />
@@ -81,15 +82,53 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Models\Client.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\ClientService.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\DocumentByService.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Gender.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Manufacturer.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
     <Compile Include="Models\Model1.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Model1.Context.tt</DependentUpon>
     </Compile>
+    <Compile Include="Models\Model1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
     <Compile Include="Models\Model1.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Model1.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Product.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\ProductPhoto.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\ProductSale.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Service.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\ServicePhoto.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Tag.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
@@ -128,7 +167,50 @@
     <Content Include="Models\Model1.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <LastGenOutput>Model1.Context.cs</LastGenOutput>
+      <DependentUpon>Model1.edmx</DependentUpon>
     </Content>
+    <Content Include="Models\Model1.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Model1.edmx</DependentUpon>
+      <LastGenOutput>Model1.cs</LastGenOutput>
+    </Content>
+    <Resource Include="Resources\122454.png" />
+    <Resource Include="Resources\96.png" />
+    <Resource Include="Resources\Экспресс-педикюр.jpg" />
+    <Resource Include="Resources\Экспресс SPA.png" />
+    <Resource Include="Resources\Шугаринг.jpg" />
+    <Resource Include="Resources\Укрепление ногтей гелем.jpg" />
+    <Resource Include="Resources\стрижка.png" />
+    <Resource Include="Resources\Стоун-терапия.jpg" />
+    <Resource Include="Resources\Снятие ресниц.jpg" />
+    <Resource Include="Resources\Ресницы.png" />
+    <Resource Include="Resources\Прокол ушей пистолетом.png" />
+    <Resource Include="Resources\Прессотерапия.jpg" />
+    <Resource Include="Resources\Полировка ногтей.jpg" />
+    <Resource Include="Resources\Покрытие ногтей гель-лаком.jpg" />
+    <Resource Include="Resources\Парафинотерапия.jpg" />
+    <Resource Include="Resources\Окрашивание бровей.jpg" />
+    <Resource Include="Resources\ногти.png" />
+    <Resource Include="Resources\Моделирование ресниц.jpg" />
+    <Resource Include="Resources\Мезотерапия.jpg" />
+    <Resource Include="Resources\массаж.jpg" />
+    <Resource Include="Resources\Контурная пластика.jpg" />
+    <Resource Include="Resources\Комбинированный маникюр.jpg" />
+    <Resource Include="Resources\Классический маникюр.png" />
+    <Resource Include="Resources\ИК-сауна.jpg" />
+    <Resource Include="Resources\Европейский маникюр.jpg" />
+    <Resource Include="Resources\Депиляция воском.jpg" />
+    <Resource Include="Resources\Демакияж.jpg" />
+    <Resource Include="Resources\Декорирование нарощенных ресниц стразами.jpg" />
+    <Resource Include="Resources\Гречишный массаж.jpg" />
+    <Resource Include="Resources\брови.png" />
+    <Resource Include="Resources\soliarij.jpg" />
+    <Resource Include="Resources\piling.jpg" />
+    <Resource Include="Resources\mask.jpeg" />
+    <Resource Include="Resources\man.png" />
+    <Resource Include="Resources\makeup.jpg" />
+    <Resource Include="Resources\face.png" />
+    <Resource Include="Resources\service_layout.png" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
